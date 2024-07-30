@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <a class="nav-links active" href="#">Home</a>
+            <a class="nav-links" href="#page2">About</a>
+            <a class="nav-links" href="#page3">Stack</a>
+            <a class="nav-links" href="#page4">Experties</a>
+            <a class="nav-links" href="#">Projects</a>
+            <a class="nav-links" href="#">Contact</a>
+        </nav>
+        <div id="dark_btn">
+            <button onclick="darkMode()">Darkmode</button>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="page1">
+            <div id="info">
+                <h1>I'm Sandesh!</h1><br>
+                <div>
+                    <h2 class="servics" id="service">FRONTEND DEVELOPER</h2>
+                </div>
+                <img id="profile-pic" src="images/profile-pic (2).png"><br>
+                <button><span id="frontline">Let's Work Together!</span><span id="backline">Contact US</span><i
+                        class="ri-arrow-right-circle-fill"></i></button>
+            </div>
+            <div id="shape">
+                <img class="shapes" id="shape1" src="images/shape1.png" alt="">
+                <img class="shapes" id="shape2" src="images/shape2.png" alt="">
+                <img class="shapes" id="shape3" src="images/shape3.png" alt="">
+                <img class="shapes" id="shape4" src="images/shape4.png" alt="">
+                <img class="shapes" id="shape5" src="images/shape6.png" alt="">
+                <img class="shapes" id="shape6" src="images/shape5.png" alt="">
+            </div>
+            <div id="heading">
+                <h1>SANDESH KOTALWAR FRONTEND DEVELOPER</h1>
+                <h1>SANDESH KOTALWAR FRONTEND DEVELOPER</h1>
+                <h1>SANDESH KOTALWAR FRONTEND DEVELOPER</h1>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="about">
+                <h2 class="page-heading">ABOUT ME</h2>
+                <div id="p2-shape">
+                    <img id="p2-shape2" src="images/shape2.png" alt="">
+                </div>
+                <div class="cards">
+                    <p id="card">Hello! I'm a passionate Frontend Developer and UI/UX Designer skilled in HTML5, CSS,
+                        JavaScript, GSAP, and Framer. With a keen eye for design and a knack for creating engaging,
+                        user-friendly web experiences, I blend clean, efficient code with intuitive design to craft
+                        visually appealing and functional websites. Leveraging tools like ChatGPT, I streamline
+                        development and enhance interactivity, ensuring each project is seamless, responsive, and
+                        delightful to use. Thank you for visiting my portfolio!</p>
+                </div>
+            </div>
+
+        </div>
+        <div id="page3">
+            <div id="page3-bgimg1">
+                <img src="images/shape3.png">
+            </div>
+            <div id="page3-bgimg2">
+                <img src="images/shape4.png">
+            </div>
+            <div id="stack">
+                <h3 class="sub-heading">STACK</h3>
+                <div id="front_stack" class="row">
+                    <img class="stack-img" src="images/Untitled design.png" alt="">
+                    <img class="stack-img" src="images/csslogo.png" alt="">
+                    <img class="stack-img" src="images/jslogo.png" alt="">
+                    <img class="stack-img" src="images/bootstraplogo.png" alt="">
+                    <img class="stack-img" src="images/Gsaplogo.png" alt="">
+                    <img class="stack-img" src="images/githublogo.png" alt="">
+                    <img class="stack-img" src="images/framerlogo.png" alt="">
+                    <img class="stack-img" src="images/chatgptlogo.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div id="page4">
+            <h3 class="sub-heading">EXPERTIES</h3>
+            <div class="experties">
+                <div class="left-part">
+                    <h4>01</h4>
+                    <p>WEB DESIGNER</p>
+                </div>
+                <div class="right-part">
+                    <p>As a skilled web designer, I specialize in creating intuitive and visually compelling web
+                        designs. My expertise in UI/UX design ensures that I craft user-centric interfaces that provide
+                        seamless and enjoyable experiences. Utilizing Figma, I bring ideas to life with precision and
+                        creativity, developing wireframes and prototypes that effectively communicate design concepts.
+                        With a keen eye for detail and a passion for innovative design, I strive to deliver exceptional
+                        digital experiences that align with modern web standards and user expectations..</p>
+                    <img src="images/shape1.png">
+                </div>
+            </div>
+            <div class="experties">
+                <div class="left-part">
+                    <h4>02</h4>
+                    <p>FRONTEND DEVELOPER</p>
+                </div>
+                <div class="right-part">
+                    <p>I excel in creating dynamic and responsive websites. My skills include HTML and CSS for crafting
+                        well-structured, visually appealing pages, and JavaScript for building interactive features. I
+                        also use GSAP to create sophisticated animations, enhancing user interaction and engagement.
+                        With this comprehensive skill set, I deliver high-quality web solutions tailored to the evolving
+                        digital landscape</p>
+                    <img src="images/shape5.png">
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <div id="projects">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgcolor:#fff;
+    
+}
+body{
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(249, 249, 249, 0.422);
+    z-index: 99999;
+    position: fixed;
+}
+nav{
+    width: 35%;
+    margin-top: 35px;
+    height: 50px;
+    background-color: rgb(226, 238, 249);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 0px 5px ;
+    color:black;
+
+}
+
+
+nav a:hover{
+    padding-bottom: 10px;
+
+}
+
+#dark_btn button{
+    padding: 10px;
+    border: none;
+    position: absolute;
+    right: 3%;
+    border-radius: 30px;
+    border: 2px solid black;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+.active{
+    background-color: rgb(255, 40, 2);
+    padding: 8px 14px;
+    color: var(--bgcolor);
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+#page1{
+    width: 100%;
+    height: 120vh;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#info{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    text-align: center;
+    z-index: 10000;
+}
+#info h1{
+    line-height: 15px;
+    font-size: 55px;
+    font-family: "Kalam", cursive;
+    font-weight: 900;
+    margin-top: 30%;
+    letter-spacing: -2px;
+}
+#info h2{
+    font-size: 18px;
+    font-weight: 400;  
+}
+
+#services{
+    height: 25px;
+    overflow: hidden;
+    animation: blink 3.5s steps(1,start) infinite ;
+}
+
+
+
+#info #profile-pic{
+    width: 70%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#info #profile-pic:hover{
+    scale: 1.1;
+    transition: all ease 0.3s;
+    
+}
+
+#info button{
+    height: 85px;
+    width: 70%;
+    border: 2px solid black;
+    background-color: var(--bgcolor);
+    border-radius: 40px;
+    font-size: 27px;
+    font-weight: 650;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+#info button #backline{
+    display: none;
+}
+#info button i{
+    font-size: 70px;
+    display: none;
+}
+
+#info button:hover{
+    justify-content: space-between;
+    font-size: 27px;
+    padding-left: 10px;
+    width: 60%;
+    transition: all ease 0.4s;
+}
+#info button:hover #backline{
+    display: block;
+    margin-left: 20px;
+}
+#info button:hover #frontline{
+    display: none;
+}
+#info button:hover i{
+    display: block;
+}
+
+#shape{
+    width: 100%;
+}
+
+.shapes{
+    height: 300px;
+    z-index: 1000;
+    position: fixed;
+}
+
+#shape1{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#shape2{
+    position: absolute;
+    top: 0%;
+    left: 59%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#shape3{
+    position: absolute;
+    top: 32%;
+    left: 12%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#shape4{
+    position: absolute;
+    top: 32%;
+    left: 68%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#shape5{
+    position: absolute;
+    top: 65%;
+    left: 22%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+#shape6{
+    position: absolute;
+    top: 65%;
+    left: 58%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#heading {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 260px;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: -1;
+}
+
+#heading::-webkit-scrollbar {
+    display: none;
+}
+
+#heading h1{
+    font-size: 240px;
+    letter-spacing: -15px;
+    font-weight: 900;
+    display: inline-block;
+    position: sticky;
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+
+}
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding-top: 10%;
+
+}
+
+.page-heading{
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+}
+
+.cards{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.cards p{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: var(--bgcolor);
+    border-radius: 30px;
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+}
+
+#p2-shape{
+    position: absolute;
+    z-index: -3;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%,-40%);
+    display: flex;
+}
+
+#p2-shape2{
+    height: 800px;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+#stack{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-top:10% ;
+
+}
+
+#stack h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+
+}
+
+.row{
+    width:80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.stack-img{
+    width: 20%;
+    margin: 10px;
+    background-color:var(--bgcolor);
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 40px;
+}
+
+
+#page3-bgimg1 img{
+    position: absolute;
+    z-index: -2;
+    height: 1000px;
+    left: -25%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+#page3-bgimg2 img{
+    position: absolute;
+    z-index: -1;
+    height: 1000px;
+    right: -30%;
+    top: 27%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#page4{
+    width: 90%;
+    height:100vh;
+    margin: auto;
+    padding-top: 9%;
+}
+
+#page4 h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.experties{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    
+}
+
+.left-part{
+    width: 40%;
+    position: sticky;
+    padding-left: 50px;
+    height: 100%;
+}
+
+.left-part h4{
+    font-size: 270px;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.left-part p{
+    position: absolute;
+    z-index: 3;
+    background-color: var(--bgcolor);
+    font-size: 40px;
+    font-weight: 800;
+    top: 25%;
+    
+}
+
+.right-part{
+    width: 60%;
+}
+.right-part p{
+    width: 80%;
+    margin: auto;
+    font-size: 18px;
+}
+.right-part img{
+    padding-left: 30%;
+    
+
+}
+
+
+#page5{
+    width: 100%;
+    height:100vh;
+}
+
+#page5 h3{
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+ 
+    100% {
+        transform: translatex(calc(-100% - 34px));
+    }
+}
+
+
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 17px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes blink {
+    0%{
+        opacity:0;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    body{
+        overflow-x:hidden;
+    }
+    #page1{
+        height: 90vh;
+    }
+    #page2{
+        height: 70vh;
+    }
+    #header{
+        display: none;
+    }
+    #info {
+        width: 80%;
+    }
+    #info h1{
+        font-size: 40px;
+        margin-top: 40%;
+    }
+    #info h2{
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    #info #profile-pic{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    #info button{
+        height: 50px;
+        font-size: 16px;
+    }
+    #info button i{
+        font-size: 45px;
+    }
+    #info button:hover{
+        font-size: 16px;
+    }
+    .shapes{
+        height: 150px;
+    }
+    #shape1,#shape5{
+        left:-10%;
+    }
+    #shape3{
+        left: -35%;
+    }
+    #shape4{
+        left: 85%;
+    }
+    #heading{
+        position: absolute;
+    }
+    #heading h1{
+        font-size: 170px;
+        letter-spacing: 1px;
+    }
+   .cards{
+    scale: 1;
+    border-radius: 20px;
+   }
+    .cards p{
+        font-size: 10px;
+    }
+
+    #stack img{
+        width: 40%;
+        border-radius: 20px;
+    }
+    #page3-bgimg1 img{
+        height: 700px;
+        left: 80%;
+    }
+    #page3-bgimg2 img{
+        height: 700px;
+        right: 80%;
+    }
+    #page4{
+        height: fit-content;
+    }
+    #page4 h3{
+        margin-bottom: 10px;
+        
+    }
+    .experties{
+        flex-direction: column;
+        height: 150vh;
+        row-gap:20px ;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .left-part ,.right-part{
+        width: 100vw;
+    }
+    .left-part{
+        max-height: 50vh;
+        padding: 0%;
+    }
+    .right-part{
+        height: 80vh;
+        width: 100vw;
+    }
+    .left-part h4{
+        font-size: 180px;
+    }
+    .left-part p{
+        font-size: 23px;
+        width: 100%;
+        top: 35%;
+        padding-left: 10px;
+    }
+    .right-part p{
+        font-size: 16px;
+        margin: 0;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 15px;
+    }
+    .right-part img{
+        height: 350px;
+    }
+}
