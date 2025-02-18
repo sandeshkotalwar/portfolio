@@ -1,4 +1,4 @@
-alert("welcome")
+
 // Handle navigation link clicks
 document.addEventListener('DOMContentLoaded', () => {
     const navlinks = document.querySelectorAll('.nav-links');
